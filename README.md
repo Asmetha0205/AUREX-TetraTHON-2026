@@ -1,94 +1,272 @@
-# AUREX – TetraTHON 2026
+# LearnFlow AI
 
-## 📚 EdTech Track
+> Adaptive Microlearning Engine & AI Doubt-Resolution Tutor for Mixed-Ability Classrooms
 
-### Problem Statement
+Developed by **Team AUREX** for **TetraTHON 2026 – EdTech Track**
+
+---
+
+## 📌 Problem Statement
 
 **ET: Adaptive Microlearning Engine & AI Doubt-Resolution Tutor for Mixed-Ability Classrooms**
 
-## Team
+The goal of LearnFlow AI is to create an adaptive learning platform that personalizes educational content for students with different learning abilities while providing an intelligent AI-powered doubt resolution experience.
 
-**AUREX**
+---
 
-## Overview
+## 👥 Team
 
-This project is being developed as part of TetraTHON 2026. Our solution aims to provide an AI-powered adaptive microlearning platform that personalizes learning for students of different ability levels while offering an intelligent AI tutor for instant doubt resolution.
+**Team Name:** AUREX
 
-## Tech Stack
+---
 
-- React + Vite
-- Tailwind CSS
-- Flask
-- Firebase
-- # Gemini API
+## 🚀 Project Overview
 
-# LearnFlow AI — Team AUREX
+LearnFlow AI is an interactive EdTech platform designed to support personalized learning in mixed-ability classrooms.
 
-Adaptive Microlearning Engine & AI Doubt-Resolution Tutor for Mixed-Ability Classrooms.
-Built for **TetraTHON 2026 — EdTech Track**.
+The platform begins with a diagnostic assessment to understand a student's current knowledge level and then generates an adaptive learning journey. Students can practice concepts, visualize their learning progress, interact with an AI tutor, and monitor their performance through personalized dashboards.
 
-This is a **frontend-only prototype**: everything runs on realistic mock data in
-`src/data/mockData.js`. There is no backend and no Firebase — nothing to configure.
+Teachers receive classroom insights, identify weak concepts, monitor student progress, and view analytics to better support their students.
 
-## Tech stack
+This project is currently implemented as a **frontend prototype** using realistic mock data to demonstrate the complete user experience.
 
-- React 19 + Vite
+---
+
+## ✨ Features
+
+### 👨‍🎓 Student Module
+
+- Landing Page
+- Student Login
+- Grade & Subject Selection
+- Diagnostic Quiz
+- Adaptive Skill Level Assignment
+  - Beginner
+  - Intermediate
+  - Advanced
+- Personalized Dashboard
+- Subject-wise Learning Path
+- Interactive Lessons
+- AI Tutor (Simulated Responses)
+- Concept Graph
+- Progress Tracking
+- Session History
+- Student Profile
+- Certificates & Achievements
+- Offline Mode (UI Prototype)
+
+---
+
+### 👩‍🏫 Teacher Module
+
+- Teacher Login
+- Teacher Dashboard
+- Student Performance Analytics
+- Weak Topic Analysis
+- Error Pattern Insights
+- Class Progress Monitoring
+- Student Leaderboard
+- Recent Classroom Activity
+
+---
+
+## 📚 Supported Subjects
+
+- Mathematics
+- Science
+- Physics
+- Chemistry
+- Biology
+- English
+
+Each subject contains its own:
+
+- Learning Path
+- Lessons
+- AI Tutor Responses
+- Concept Graph
+- Progress Data
+- Dashboard Content
+
+---
+
+## 🛠 Tech Stack
+
+### Implemented
+
+- React 19
+- Vite
 - Tailwind CSS v4
-- React Router v6
-- Framer Motion (page transitions, hover/tap micro-interactions, typing indicator)
-- Recharts (progress & performance charts)
-- lucide-react (icons)
+- React Router DOM
+- Framer Motion
+- Recharts
+- Lucide React
 
-## Run it locally
+### Planned Future Integrations
 
-```bash
-npm install
-npm run dev
-```
+- Flask Backend
+- Firebase Authentication & Database
+- Gemini API
 
-Then open the printed local URL (usually `http://localhost:5173`).
+---
 
-To build a production bundle:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Walkthrough / navigation flow
-
-```
-Landing (/) -> Login (/login) -> Diagnostic Quiz (/quiz) -> Student Dashboard (/dashboard)
-   -> Learning Path (/path) -> Lesson (/lesson/:id) -> AI Tutor (/tutor) -> Profile (/profile)
-
-Teacher Dashboard (/teacher) - reachable from Login by choosing the "Teacher" tab
-```
-
-On the login screen, any email/password combination works, and the tab you pick
-(Student vs Teacher) decides where you land - student flows go into the diagnostic
-quiz first, teacher flows go straight to the class overview.
-
-## Project structure
+## 📂 Project Structure
 
 ```
 src/
-  components/   Reusable UI: Button, Card, Modal, Toast, ProgressBar, Timeline,
-                 Skeleton, sidebars, mobile nav, page transition wrapper
-  layouts/       StudentLayout and TeacherLayout (sidebar + routed content)
-  pages/         One file per screen (Landing, Login, DiagnosticQuiz,
-                 StudentDashboard, LearningPath, Lesson, AiTutor,
-                 TeacherDashboard, StudentProfile)
-  data/          mockData.js - every student, lesson, quiz, chart series and
-                 teacher-side stat used across the app
-  index.css      Design tokens (color/type scale) via Tailwind v4 @theme
+│
+├── components/
+│   ├── Reusable UI Components
+│   ├── Navigation
+│   ├── Progress Bars
+│   ├── Timeline
+│   ├── Toast
+│   ├── Skeleton Loaders
+│   └── Sidebars
+│
+├── layouts/
+│   ├── StudentLayout
+│   └── TeacherLayout
+│
+├── pages/
+│   ├── Landing
+│   ├── Login
+│   ├── DiagnosticQuiz
+│   ├── StudentDashboard
+│   ├── LearningPath
+│   ├── Lesson
+│   ├── AiTutor
+│   ├── ConceptGraph
+│   ├── StudentProfile
+│   └── TeacherDashboard
+│
+├── context/
+│   └── AuthContext
+│
+├── data/
+│   ├── mockData.js
+│   └── subjectContent.js
+│
+└── index.css
 ```
 
-## Notes for judges
+---
 
-- All data is deterministic mock data - refreshing the app resets any in-session
-  state (quiz answers, chat messages, flashcard flips, submitted forms).
-- The AI Tutor's replies are randomly selected from a small pool of canned
-  responses to simulate a live conversation; there is no real model call.
-- Diagnostic quiz scoring maps % correct to Beginner / Intermediate / Advanced,
-  and that level is also reflected as the default in the Learning Path and
-  Student Dashboard.
+## 🧠 Learning Flow
+
+```
+Landing Page
+      │
+      ▼
+Login
+      │
+      ▼
+Select Grade & Subject
+      │
+      ▼
+Diagnostic Quiz
+      │
+      ▼
+Adaptive Skill Level
+      │
+      ▼
+Student Dashboard
+      │
+      ├────────────► Learning Path
+      │                    │
+      │                    ▼
+      │                 Lessons
+      │
+      ├────────────► AI Tutor
+      │
+      ├────────────► Concept Graph
+      │
+      └────────────► Student Profile
+```
+
+Teacher Flow
+
+```
+Login
+   │
+   ▼
+Teacher Dashboard
+        │
+        ├── Student Analytics
+        ├── Weak Topics
+        ├── Error Patterns
+        ├── Classroom Performance
+        └── Leaderboard
+```
+
+---
+
+## ▶ Running the Project
+
+Clone the repository
+
+```bash
+git clone https://github.com/Asmetha0205/AUREX-TetraTHON-2026.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build the production version
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📝 Notes for Judges
+
+- This project is a **frontend prototype** developed for TetraTHON 2026.
+- All educational content is generated using realistic mock datasets.
+- Student progress, quiz results, and AI conversations reset when the application is refreshed.
+- The AI Tutor currently uses simulated responses to demonstrate the intended user experience.
+- Diagnostic Quiz scores automatically categorize students into Beginner, Intermediate, or Advanced learning levels.
+- Subject-specific dashboards and learning paths adapt based on the selected subject.
+
+---
+
+## 🔮 Future Scope
+
+- Flask Backend Integration
+- Firebase Authentication
+- Cloud Database
+- Gemini-powered AI Tutor
+- Personalized Learning Recommendations
+- Voice-based Doubt Resolution
+- Gamification & Rewards
+- Live Classroom Analytics
+- Teacher Assignment Management
+- Student Progress Synchronization
+
+---
+
+## 📄 License
+
+This project has been developed solely for the **TetraTHON 2026 Hackathon** as an educational prototype.
+
+---
+
+## ⭐ Repository
+
+If you found this project interesting, consider giving the repository a ⭐.
