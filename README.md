@@ -13,10 +13,17 @@ Developed by **Team AUREX** for **TetraTHON 2026 – EdTech Track**
 The goal of LearnFlow AI is to create an adaptive learning platform that personalizes educational content for students with different learning abilities while providing an intelligent AI-powered doubt resolution experience.
 
 ---
-
 ## 👥 Team
 
 **Team Name:** AUREX
+
+### Team Members
+
+- Asmetha Thoppe
+- Henisha Kandoi
+- Pranav Mistry
+- Harsh Chauhan
+- Malav Patel
 
 ---
 
