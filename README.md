@@ -39,6 +39,49 @@ This project is currently implemented as a **frontend prototype** using realisti
 
 ---
 
+## 📸 Screenshots
+
+### 1. Landing Page
+![Landing Page](screenshots/01-landing-page.png)
+
+### 2. Student Login
+![Student Login](screenshots/02-login-page.png)
+
+### 3. Grade & Subject Selection
+![Grade and Subject Selection](screenshots/03-grade-selection.png)
+
+### 4. 5-Question Diagnostic Assessment
+![Diagnostic Quiz](screenshots/04-diagnostic-quiz.png)
+
+### 5. Diagnostic Result & Level Rationale
+![Diagnostic Result](screenshots/05-diagnostic-result.png)
+
+### 6. Personalized Microlearning Path
+![Personalized Learning Path](screenshots/06-learning-path.png)
+
+### 7. Multimodal AI Doubt Tutor (Socratic & Direct Modes)
+![AI Tutor](screenshots/07-ai-tutor.png)
+
+### 8. Handwritten Math Problem Photo Upload
+![Handwritten Image Upload](screenshots/08-image-upload.png)
+
+### 9. Interactive Concept Knowledge Graph
+![Concept Knowledge Graph](screenshots/09-concept-graph.png)
+
+### 10. Student Progress Dashboard
+![Student Dashboard](screenshots/10-student-dashboard.png)
+
+### 11. Student Session History & Activity Heatmap
+![Student Session History](screenshots/11-student-session-history.png)
+
+### 12. Teacher Login
+![Teacher Login](screenshots/12-teacher-login_page.png)
+
+### 13. Teacher Command Center & Real-Time Pulse
+![Teacher Dashboard](screenshots/13-teacher-dashboard.png)
+
+---
+
 ## ✨ Features
 
 ### 👨‍🎓 Student Module
