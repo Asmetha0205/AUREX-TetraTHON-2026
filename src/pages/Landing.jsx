@@ -176,7 +176,7 @@ export default function Landing() {
       </section>
 
       {/* Features Section */}
-      <section className="max-w-7xl mx-auto px-6 py-10">
+      <section id="features" className="max-w-7xl mx-auto px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">Core Platform Pillars</h2>
           <p className="text-sm text-[var(--color-ink-soft)]">Everything required for student mastery and teacher oversight.</p>
@@ -195,7 +195,7 @@ export default function Landing() {
       </section>
 
       {/* How it Works Section */}
-      <section className="bg-white border-y border-[var(--color-line)] py-10">
+      <section id="how" className="bg-white border-y border-[var(--color-line)] py-10 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">How It Works</h2>
@@ -214,7 +214,7 @@ export default function Landing() {
       </section>
 
       {/* Testimonials */}
-      <section className="max-w-7xl mx-auto px-6 py-10">
+      <section id="stories" className="max-w-7xl mx-auto px-6 py-10 scroll-mt-20">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">Approved by Teachers & Students</h2>
         </div>

@@ -16,7 +16,7 @@ export default function PublicNavbar() {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--color-ink-soft)]">
           <a href="#features" className="hover:text-[var(--color-primary)] transition-colors">Features</a>
           <a href="#how" className="hover:text-[var(--color-primary)] transition-colors">How it works</a>
-          <a href="#testimonials" className="hover:text-[var(--color-primary)] transition-colors">Stories</a>
+          <a href="#stories" className="hover:text-[var(--color-primary)] transition-colors">Stories</a>
         </div>
         <div className="flex items-center gap-3">
           <Button variant="ghost" size="sm" onClick={() => navigate('/login')}>Log in</Button>
